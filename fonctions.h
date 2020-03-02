@@ -1,9 +1,12 @@
-typedef struct{
+typedef struct
+{
 	int n1, n2, n3, n4;
-}AdresseIP;
+} AdresseIP;
 
+// une machine est definie par son adresse ip et son nom
 typedef struct Machine Machine;
-struct Machine{
+struct Machine
+{
 	char nom[20];
 	AdresseIP ip;
 	Machine *suivant;
