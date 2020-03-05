@@ -33,6 +33,7 @@ void afficher_details_reseau(Machine *res)
 	printf("\nReseau: ");
 	while (res != NULL)
 	{
+		// afficher le nom et l'adresse
 		printf("%s (%d.%d.%d.%d) -> ", res->nom, (res->ip).n1, (res->ip).n2, (res->ip).n3, (res->ip).n4);
 		res = res->suivant;
 	}
